@@ -1,0 +1,24 @@
+{
+  "name": "l1g3r-com",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "L1G3R COM",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/rollup/dist/bin/rollup -c",
+    "run": "deno run -A dist/tool.bundle.js"
+  },
+  "author": "Scott H.",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.1",
+    "@rollup/plugin-node-resolve": "^15.3.0",
+    "rollup": "^4.24.0",
+    "rollup-license-plugin": "^3.0.0"
+  },
+  "dependencies": {
+    "byte-base64": "^1.1.0",
+    "fpng": "github:acodrst/fpng"
+  }
+}
