@@ -17,3 +17,6 @@ function refresh() {
 globalThis.addEventListener("hashchange", () => {
   refresh();
 });
+document.getElementById("sean_button").addEventListener("click", () => {
+  document.getElementById("sites").scrollIntoView();
+});
