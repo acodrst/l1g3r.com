@@ -42,7 +42,9 @@ td,th {
     display:block;
   }
   #sites svg {
+    margin-left:3px;
     height:100%;
+    width:28px;
   }
   #sites {
     display: flex;
