@@ -7,6 +7,7 @@
   <title>🏗️</title>
 </head>
 <body>
+  <svg id="loading" width="90" height="50"><rect width="90" height="50" fill="none" /><text y="20">⏳<animateMotion path="M 0 0 H 60 Z" dur="3s" repeatCount=9 /></text></svg> 
   <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.5/dist/FileSaver.min.js"
     integrity="sha512-Qlv6VSKh1gDKGoJbnyA5RMXYcvnpIqhO++MhIM2fStMcGT9i2T//tSwYFlcyoRRDcDZ+TYHpH8azBBCyhpSeqw=="
     crossorigin="anonymous" defer></script>
@@ -17,11 +18,11 @@
     integrity = "sha512-8l6PLZDUdQBuIjsM0vEKUCup9KP+EsB6NlvUtFrDneI1JoIvIJGmxIoiq0qnA31BeKdAwYcTk0TQg71AX9HgRA=="
     crossorigin = "anonymous" ></script>
   <script>
-    const t = "20250313T151507522Z",
-      a="6f233bc1",
-      g = "2935508",
-      tl="59880332";
-    fetch("20250313T151507522Z-6f233bc1.png").then((q) => {
+    const t = "20250316T165632959Z",
+      a="c995b716",
+      g = "2934709",
+      tl="59880357";
+    fetch("20250316T165632959Z-c995b716.png").then((q) => {
       q.arrayBuffer().then((a) => {
         let l = fflate.unzlibSync(new Uint8Array(a.slice(41, -16))),
           f = 0,
@@ -39,7 +40,7 @@
             p++;
           }
         } while (f < l.length);
-        let z = fzstd.decompress(u.slice(7 * 1024, 7 * 1024 + 2935508)),
+        let z = fzstd.decompress(u.slice(7 * 1024, 7 * 1024 + 2934709)),
           s = document.createElement("script");
         s.appendChild(document.createTextNode(new TextDecoder().decode(z)));
         document.body.appendChild(s);

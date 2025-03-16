@@ -13,6 +13,9 @@
       background-color: #0D1117;
     }
   }
+  #loading{
+    display:none;
+  }
   @media (prefers-color-scheme: light) {
     a:visited { color: blue; font-weight:bolder;}
     a:link { color: blue; font-weight:bolder;}
