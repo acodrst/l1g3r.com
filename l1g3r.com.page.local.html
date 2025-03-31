@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8"> 
+  <style>#loading{margin-top:30vmin;margin-left:35vmin;}</style>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>🏗️</title>
 </head>
@@ -10,11 +11,11 @@
   <script src="fzstd.min.js"> </script>
   <script src="fflate.min.js"></script>
   <script>
-  const t="20250316T165632959Z",
-      a="c995b716",
-      g = "2934709",
-      tl="59880357";
-  fetch("20250316T165632959Z-c995b716.png").then((q) => {
+  const t="20250331T220320297Z",
+      a="334aee2b",
+      g = "2933928",
+      tl="59879802";
+  fetch("20250331T220320297Z-334aee2b.png").then((q) => {
   q.arrayBuffer().then((a) => {
     let l = fflate.unzlibSync(new Uint8Array(a.slice(41, -16))),
       f = 0,
@@ -32,7 +33,7 @@
         p++;
       }
     } while (f < l.length);
-    let z = fzstd.decompress(u.slice(7 * 1024, 7 * 1024 + 2934709)),
+    let z = fzstd.decompress(u.slice(7 * 1024, 7 * 1024 + 2933928)),
       s = document.createElement("script");
     s.appendChild(document.createTextNode(new TextDecoder().decode(z)));
     document.body.appendChild(s);
